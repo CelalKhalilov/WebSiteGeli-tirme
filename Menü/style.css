@@ -1,0 +1,110 @@
+/* Genel sayfa stilini belirleme */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* BaÃ…Å¸lÃ„Â±k stilini belirleme */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Gezinme menÃƒÂ¼sÃƒÂ¼ stilini belirleme */
+nav {
+    text-align: center;
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Ã–ÄŸeleri yan yana hizala */
+    margin-right: 15px;
+    
+}
+#AnaSayfa{
+	font-weight: normal; /* Normal font ağırlığı */
+    transition: font-weight 0.3s; /* Geçiş efekti */
+}
+#AnaSayfa:hover {
+    /*font-weight: bold;  Maus üzerine gelindiğinde kalınlaştır */
+	color:#7066bc;
+}
+
+#menu{
+	font-weight: bold; /* Hafif kalınlaştırma için */
+	color: #7066bc;
+}
+
+nav a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* BÃƒÂ¶lÃƒÂ¼m stilini belirleme */
+section {
+    padding: 4em;
+}
+
+/* Altbilgi stilini belirleme */
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.bosluk{
+	margin: 30px;
+}
+/* ===================== KARTLAR ===================== */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: #f9f6f2;
+}
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color: black;
+    border: none;
+}
+h3,h5{
+    color: rgb(0, 91, 228);
+}
