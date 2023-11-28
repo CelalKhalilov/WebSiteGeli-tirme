@@ -1,14 +1,14 @@
 /* Genel sayfa stilini belirleme */
 body {
-	background-image: url('arkapilan.jpg');
-    font-family: 'Arial', sans-serif;
+	/* background-image: url('arkapilan.jpg');*/
+    font-family: 'Arial', sans-serif; 
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
     color: #333;
 }
 
-/* BaÃ…Å¸lÃ„Â±k stilini belirleme */
+/* Başlık stilini belirleme */
 header {
     background-color: #4CAF50;
     color: #fff;
@@ -16,13 +16,14 @@ header {
     padding: 1em 0;
 }
 
-/* Gezinme menÃƒÂ¼sÃƒÂ¼ stilini belirleme */
+/* Gezinme menü stilini belirleme */
 nav {
     text-align: center;
     background-color: #333;
 }
 
 nav ul {
+	font-weight: bold; /* Hafif kalınlaştırma için */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -35,19 +36,20 @@ nav ul li {
 }
 #menu{
 	
-	font-weight: normal; /* Normal font ağırlığı */
+	/* font-weight: normal; /* Normal font ağırlığı 
     transition: font-weight 0.3s; /* Geçiş efekti */
-	
-}
+	 
+} 
 #menu:hover {
-    /*font-weight: bold;  Maus üzerine gelindiğinde kalınlaştır */
-	color:#7066bc;
+    /* font-weight: bold;  /*Maus üzerine gelindiğinde kalınlaştır 
+	color:#7066bc; */
 }
 
 #AnaSayfa{
-	font-weight: bold; /* Hafif kalınlaştırma için */
-	color: #7066bc;
+	/* font-weight: bold; /* Hafif kalınlaştırma için 
+	color: #7066bc; */
 }
+
 
 nav a {
     display: block;
@@ -73,73 +75,192 @@ footer {
     text-align: center;
     padding: 10px;
 }
-/* --------------------------------------- */
+/* ==================== ARAMA TEABLE ==================== */
 
-container{
-	position: absolute;
-	left: 48%;
-	top: 45%;
-	transform: translate(-50%, -50%);
-	padding: 10px;
-}
+
 input{
 	position: relative;
 	outline: none;
 	box-sizing:border-box;
 	left: 0px;
-	top: 53px;
+	top: 0px;
 	height: 25px;
-	width: 0px;
+	width: 150px;
 	padding: 0 15px;
 	color: black;
 	border-radius: 50px;
-	font-size: 10px;
+	font-size: 15px;
 	border: 2px solid #D50000;
-	transition: all .7s ease; 
-}
-
-.daire {
-	position: relative;
-    top: 20px;
-    left: 10px;
-	width: 35px; /* Daire çapını belirtin */
-    height: 35px; /* Daire çapını belirtin */
-	background-color: #3498db; /* Daire rengi */
-    border-radius: 50%; /* Daireyi yuvarlak yapmak için */
 	
 }
 
-::placeholder{
-	color: grey;
+/* ================== ALT MENÜ =================== */
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-.btn{
-	position: relative;
-	right: 0px;
-	top: 22px;
-	width: 35px;
-	height: 35px;
-	background: #dc0303;
-	line-height: 80px;
-	border-radius: 50%;
-	text-align: center;
-	cursor: pointer;
-	transition: .5s;
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 10px rgb(0 0 0 / 30%);
+    z-index: 1;
+	border-radius: 10px;
+	
 }
-.btn i{
-	position: relative;
-	font-size: 15px;
-	left: 0px;
-	top: -20px;
-	color: white;
-	line-height: 80px;
-	transition: all .7s ease;
+
+.dropdown-content a {
+    color: black;
+    padding: 7px 10px;
+    display: block;
+    text-decoration: none;
+	border-radius: 10px;
+	
 }
-.container:hover input{
-	width: 200px;
+
+.dropdown-content a:hover {
+    background-color: #dddddd;
 }
-.container:hover i{
-	transform: rotate(-360deg);
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
-.btn:hover{
-	background: #cc0000;
+
+/*-------*/
+
+/* Önceki stiller buraya gelecek */
+
+.sub-dropdown {
+    display: inline-block;
 }
+
+.sub-dropbtn {
+	min-width: 160px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+.sub-dropdown-content {
+	
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 10px rgb(0 0 0 / 30%);
+    z-index: 1;
+	border-radius: 10px;
+	left: 100%; /* 50% genişlikte bir kaydırma yapar, istediğiniz değeri kullanabilirsiniz */
+    top:65px;
+}
+
+.sub-dropdown-content a {
+    color: black;
+    padding: 7px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.sub-dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
+/* ===================================== */
+
+
+/*=======================================*/
+
+.metin a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    
+}
+.metin a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0px;
+    bottom: 10px;
+    transition: 0.3s;
+}
+.metin a:hover{
+    color: #ffffff;
+}
+.metin a:hover:after{
+    width: 100%;
+}
+
+
+
+li .dropbtn{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    
+}
+li .dropbtn:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0px;
+    bottom: 10px;
+    transition: 0.3s;
+}
+li .dropbtn:hover{
+    color: #ffffff;
+}
+li .dropbtn:hover:after{
+    width: 100%;
+}
+
+/* .nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.nav-item a:hover:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+.nav-item a:hover:hover:after {
+    width: 100%;
+} */
