@@ -30,7 +30,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block; /* Ã–ÄŸeleri yan yana hizala */
+    display: inline-block; /* Öğeleri yan yana hizala */
     margin-right: 15px;
     
 }
@@ -58,13 +58,13 @@ nav a {
     color: #fff;
 }
 
-/* BÃƒÂ¶lÃƒÂ¼m stilini belirleme */
+/* Bölüm stilini belirleme */
+
 section {
     padding: 4em;
 }
 
 /* Altbilgi stilini belirleme */
-
 
 footer {
     position: fixed;
@@ -75,6 +75,42 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* ===================== KARTLAR ===================== */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: #f9f6f2;
+}
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color: black;
+    border: none;
+}
+h3,h5{
+    color: rgb(0, 91, 228);
+}
+
+
 /* ==================== ARAMA TEABLE ==================== */
 
 
@@ -133,9 +169,8 @@ input{
     display: block;
 }
 
-/*-------*/
+/*------------------------------------------------*/
 
-/* Önceki stiller buraya gelecek */
 
 .sub-dropdown {
     display: inline-block;
@@ -179,13 +214,8 @@ input{
 }
 
 
+/* ================== GEZİNME MENÜ: ALT ÇİZGİ =================== */
 
-
-
-/* ===================================== */
-
-
-/*=======================================*/
 
 .metin a{
     position: relative;
@@ -212,8 +242,6 @@ input{
 .metin a:hover:after{
     width: 100%;
 }
-
-
 
 li .dropbtn{
     position: relative;

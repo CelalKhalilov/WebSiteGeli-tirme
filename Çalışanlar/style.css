@@ -1,103 +1,276 @@
 /* Genel sayfa stilini belirleme */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
-/* BaÃ…Å¸lÃ„Â±k stilini belirleme */
+/* Başlık stilini belirleme */
 header {
-    background-color: #4CAF50;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
 }
 
-/* Gezinme menÃƒÂ¼sÃƒÂ¼ stilini belirleme */
+/* Gezinme menü stilini belirleme */
 nav {
-    text-align: center;
-    background-color: #333;
+  text-align: center;
+  background-color: #333;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  font-weight: bold; /* Hafif kalınlaştırma için */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline-block; /* Ã–ÄŸeleri yan yana hizala */
-    margin-right: 15px;
-    
-}
-#AnaSayfa{
-	font-weight: normal; /* Normal font ağırlığı */
-    transition: font-weight 0.3s; /* Geçiş efekti */
-}
-#AnaSayfa:hover {
-    /*font-weight: bold;  Maus üzerine gelindiğinde kalınlaştır */
-	color:#7066bc;
+  display: inline-block; /* Öğeleri yan yana hizala */
+  margin-right: 15px;
+
 }
 
-#menu{
-	font-weight: bold; /* Hafif kalınlaştırma için */
-	color: #7066bc;
+#AnaSayfa {
+  font-weight: normal; /* Normal font ağırlığı */
+  transition: font-weight 0.3s; /* Geçiş efekti */
+}
+
+#AnaSayfa:hover {
+  /*font-weight: bold;  Maus üzerine gelindiğinde kalınlaştır */
+  color: #7066bc;
+}
+
+#menu {
+  font-weight: bold; /* Hafif kalınlaştırma için */
+  color: #7066bc;
 }
 
 nav a {
-    display: block;
-    padding: 1em;
-    text-decoration: none;
-    color: #fff;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #fff;
 }
 
-/* BÃƒÂ¶lÃƒÂ¼m stilini belirleme */
+/* Bölüm stilini belirleme */
 section {
-    padding: 4em;
+  padding: 4em;
 }
 
 /* Altbilgi stilini belirleme */
 
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    background-color: #333;
-    text-align: center;
-    padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
 }
 
 
-.bosluk{
-	margin: 30px;
+.bosluk {
+  margin: 85px;
 }
+
+/* ==================== ARAMA TEABLE ==================== */
+
+
+input {
+  position: relative;
+  outline: none;
+  box-sizing: border-box;
+  left: 0px;
+  top: 0px;
+  height: 25px;
+  width: 150px;
+  padding: 0 15px;
+  color: black;
+  border-radius: 50px;
+  font-size: 15px;
+  border: 2px solid #D50000;
+
+}
+
 /* ================== ALT MENÜ =================== */
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 10px rgb(0 0 0 / 30%);
+  z-index: 1;
+  border-radius: 10px;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 7px 10px;
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #dddddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*------------------------------------------------*/
+
+
+.sub-dropdown {
+  display: inline-block;
+}
+
+.sub-dropbtn {
+  min-width: 160px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+  display: block;
+}
+
+.sub-dropdown-content {
+
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 10px rgb(0 0 0 / 30%);
+  z-index: 1;
+  border-radius: 10px;
+  left: 100%;
+  /* 50% genişlikte bir kaydırma yapar, istediğiniz değeri kullanabilirsiniz */
+  top: 65px;
+}
+
+.sub-dropdown-content a {
+  color: black;
+  padding: 7px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.sub-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+/* ================== GEZİNME MENÜ: ALT ÇİZGİ =================== */
+
+
+.metin a {
+  position: relative;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+
+}
+
+.metin a:after {
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0px;
+  bottom: 10px;
+  transition: 0.3s;
+}
+
+.metin a:hover {
+  color: #ffffff;
+}
+
+.metin a:hover:after {
+  width: 100%;
+}
+
+li .dropbtn {
+  position: relative;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+
+}
+
+li .dropbtn:after {
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0px;
+  bottom: 10px;
+  transition: 0.3s;
+}
+
+li .dropbtn:hover {
+  color: #ffffff;
+}
+
+li .dropbtn:hover:after {
+  width: 100%;
+}
+
+
+
+/* ================== =================== */
 
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
+
+/*body {
   display: flex;
   padding: 0 35px;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(to left top, #031A9A, #8B53FF);
-}
+}*/
 .wrapper {
-  max-width: 1100px;
+  max-width: 1600px;
   width: 100%;
   position: relative;
 }
+
 .wrapper i {
   top: 50%;
   height: 50px;
@@ -109,49 +282,59 @@ body {
   line-height: 50px;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.wrapper i:active{
+
+.wrapper i:active {
   transform: translateY(-50%) scale(0.85);
 }
-.wrapper i:first-child{
-  left: -22px;
+
+.wrapper i:first-child {
+  left: 20px;
 }
-.wrapper i:last-child{
-  right: -22px;
+
+.wrapper i:last-child {
+  right: 20px;
 }
-.wrapper .carousel{
+
+.wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
+  grid-auto-columns: calc((100% / 3) - 140px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 16px;
-  border-radius: 8px;
+  border-radius: 20px;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+
 .carousel::-webkit-scrollbar {
   display: none;
 }
+
 .carousel.no-transition {
   scroll-behavior: auto;
 }
+
 .carousel.dragging {
   scroll-snap-type: none;
   scroll-behavior: auto;
 }
+
 .carousel.dragging .card {
   cursor: grab;
   user-select: none;
 }
+
 .carousel :where(.card, .img) {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .carousel .card {
   scroll-snap-align: start;
   height: 342px;
@@ -162,12 +345,14 @@ body {
   flex-direction: column;
   border-radius: 8px;
 }
+
 .carousel .card .img {
   background: #8B53FF;
   height: 148px;
   width: 148px;
   border-radius: 50%;
 }
+
 .card .img img {
   width: 140px;
   height: 140px;
@@ -175,15 +360,18 @@ body {
   object-fit: cover;
   border: 4px solid #fff;
 }
+
 .carousel .card h2 {
   font-weight: 500;
   font-size: 1.56rem;
   margin: 30px 0 5px;
 }
+
 .carousel .card span {
   color: #6A6D78;
   font-size: 1.31rem;
 }
+/* ================ RİSPONCİVE ================ */
 
 @media screen and (max-width: 900px) {
   .wrapper .carousel {
@@ -197,102 +385,21 @@ body {
   }
 }
 
+/* -------------------------------------------- */
 
+@media screen and (max-width: 400px) {
 
+  .bosluk {
+  margin: 135px;
+  }
 
-
-
-
-/* ================== ALT MENÜ =================== */
-
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    /* Diğer değişiklikleri buraya ekleyebilirsiniz */
 }
+@media screen and (min-width: 700px) and (max-width: 800px) {
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-	border-radius: 15px;
-	
-}
+  .bosluk {
+    margin: 330px;
+  }
 
-.dropdown-content a {
-    color: black;
-    padding: 7px 10px;
-    display: block;
-    text-decoration: none;
-	border-radius: 10px;
-	
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* ===================================== */
-
-
-input{
-	outline: none;
-	box-sizing: border-box;
-	height: 25px;
-	width: 0px;
-	padding: 0 25px;
-	color: black;
-	border-radius: 50px;
-	font-size: 15px;
-	border: 1px solid #D50000;
-	transition: all .7s ease; 
-}
-::placeholder{
-	color: grey;
-}
-.btnn{
-	
-	box-sizing: border-box;
-	position: relative;
-	right:73px;
-    top: 7px;
-	width: 25px;
-	height: 25px;
-	background: #D50000;
-	line-height: 80px;
-	border-radius: 50%;
-	text-align: center;
-	cursor: pointer;
-	transition: .5s;
-}
-.fa-search{
-	font-size:14px;
-	position:relative;
-	right: 128px;
-    top: 1px;
-}
-.btnn i{
-	font-size: 2px;
-	color: white;
-	line-height: 80px;
-	transition: all .7s ease;
-}
-.container:hover input{
-	width: 200px;
-}
-.container:hover i{
-	transform: rotate(-360deg);
-}
-.btnn:hover{
-	background: #cc0000;
+    /* Diğer değişiklikleri buraya ekleyebilirsiniz */
 }
